@@ -1,6 +1,12 @@
-@import "tailwindcss";
+/* ✅ Put this first! */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap");
 
-:root {
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +29,356 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "COOPBL";
+  src: url("/fonts/COOPBL.woff2") format("woff2"),
+    url("/fonts/COOPBL.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* optional but recommended */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+}
+a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#header {
+  background: url(/images/back_1.png) no-repeat center / cover border-box;
+}
+
+#header img {
+  border-radius: 50%;
+  width: 33%;
+  margin: 0 0 0 90px;
+}
+
+#navbar ul li a {
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+#navbar ul li a:hover {
+  background: whitesmoke;
+  color: grey;
+  transform: 0.3 s ease-in-out;
+  border-radius: 25px;
+}
+
+#banner {
+  position: relative;
+}
+#banner img {
+  width: 100vw;
+}
+
+#hamburger-menu,
+#hamburger-menu button {
+  display: none;
+}
+
+#banner h1 {
+  font-family: "COOPBL", sans-serif;
+  font-size: 3.1rem;
+  text-align: center;
+  -webkit-text-stroke: 1px red;
+  text-shadow: 4px 3px 2px white;
+  background: rgba(173, 216, 230, 0.8);
+  position: absolute;
+  width: 50%;
+  margin: 0 auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+}
+.about-section {
+  background: url(/images/about-background.png) no-repeat center / cover;
+  padding: 40px 0 40px 0;
+}
+
+.about-section-left {
+  width: 60%;
+  padding: 0 30px;
+}
+.about-section-left p {
+  width: 90%;
+  line-height: 25px;
+  margin: 20px 0 0 0;
+}
+
+.about-section-right img {
+  width: 30vw;
+  margin: 0 40px 0 0;
+}
+
+.page-buttons {
+  background: blue;
+  color: #fff;
+  padding: 7px 15px;
+  text-align: center;
+  width: 15vw;
+  margin-top: 30px;
+}
+.page-buttons:hover {
+  color: #fff;
+  background: #999999;
+  transition: 0.3ms ease-in-out;
+  font-weight: 700;
+}
+
+.gallery-section {
+  background: linear-gradient(
+    45deg,
+    #e2dcdc,
+    #e2dcdc 30%,
+    #999999 70%,
+    #999999 100%
+  );
+  padding: 20px 0 40px 0;
+}
+.gallery-section h2 {
+  text-align: center;
+}
+.gallery-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0 0 0;
+}
+.gallery-contents {
+  width: 18%;
+}
+.gallery-contents img {
+  width: 100%;
+}
+.gallery-contents img:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.gallery-contents span {
+  display: block;
+  text-align: center;
+  background: blue;
+  padding: 10px 0;
+  color: #fff;
+}
+.gallery-contents span:hover {
+  cursor: pointer;
+  color: blue;
+  background: #fff;
+  font-weight: 700;
+  transition: 10ms ease-in-out;
+}
+.gallery-contents a:hover {
+  cursor: pointer;
+  transition: 10ms ease-in-out;
+}
+
+.reviews-section {
+  background: rgb(203, 250, 250);
+  padding: 0 0 40px 60px;
+}
+.reviews-section h2 {
+  padding: 30px 0 0 0;
+  margin: 0 0 50px 0;
+}
+.reviews-contents {
+  margin: 10px 0 20px;
+  border: 1px solid #999999;
+  padding: 25px 45px;
+  width: 75%;
+}
+.reviews-contents span i {
+  color: yellow;
+  margin-bottom: 10px;
+}
+.reviews-contents .comments {
+  width: 80%;
+}
+.reviews-contents .person {
+  margin: 10px 0 0 0;
+  font-weight: 800;
+}
+
+.reviews-section .page-buttons {
+  width: 170px;
+}
+.contact-form button {
+  background: blue;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  color: #fff;
+  background: #999999;
+  transition: 0.3ms ease-in-out;
+  font-weight: 700;
+}
+
+.contact-section,
+.contact-div {
+  background: #999999;
+  padding: 40px 0 30px;
+  display: flex;
+}
+
+.contact-section form,
+.contact-div form {
+  border: 1px solid white;
+  margin: 0 0 0 60px;
+  border-radius: 25px;
+  padding: 30px 50px;
+}
+
+.contact-section form h2,
+.contact-div form h2 {
+  margin: 0 0 25px 0;
+}
+.contact-section form input,
+.contact-section form textarea,
+.contact-div form input,
+.contact-div form textarea {
+  background: #e2dcdc !important;
+  color: #000;
+}
+
+.fb-link {
+  text-align: center;
+  color: #3b5998; /* Facebook blue */
+  font-size: 1.5rem;
+  margin: 0 0 0 0;
+  text-decoration: none;
+  background: #fff;
+  width: 56px;
+  padding: 10px 0;
+  border-radius: 50%;
+  transition: color 0.3s;
+}
+
+.contact-icons {
+  margin: 50px 0 0 50px;
+}
+
+.mobile-link,
+.gmap-link,
+.gmail-link {
+  color: #fff;
+  margin: 25px 0;
+}
+
+.fb-link:hover {
+  background: #1d2d50;
+  color: #fff;
+}
+
+.mobile-link:hover,
+.gmap-link:hover,
+.gmail-link:hover {
+  color: #1d2d50;
+}
+.footer {
+  text-align: center;
+  /* background: url("../images/back_1.png") no-repeat center/cover; */
+  background: #e2dcdc;
+  padding: 30px 0 20px 0;
+}
+.footer nav {
+  margin: 10px 0 15px 0;
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer nav ul a {
+  padding: 12px 20px;
+  color: blue;
+}
+.company-name,
+.reserved {
+  font-size: 11px;
+}
+
+.active {
+  background: whitesmoke;
+  color: grey !important;
+  border-radius: 25px;
+}
+
+.footer-active {
+  font-weight: bold;
+}
+
+.gallery-section {
+  background: linear-gradient(
+    45deg,
+    #e2dcdc,
+    #e2dcdc 30%,
+    #999999 70%,
+    #999999 100%
+  );
+  padding: 20px 0 40px 0;
+}
+
+#gallery-h2 {
+  text-align: left;
+  margin: 0 0 30px 30px;
+}
+.gallery-wrapper {
+  border-bottom: 1px solid #e2dcdc;
+}
+
+.gallery-section h3 {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #3b5998;
+  margin-top: 20px;
+  padding: 20px 0 20px;
+}
+
+.gallery-image-wrapper img {
+  border: 1px solid #e2dcdc;
+}
+
+.gallery-image-wrapper img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+hr {
+  margin-top: 30px;
+  color: #3b5998;
 }
