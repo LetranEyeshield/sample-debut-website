@@ -13,6 +13,8 @@ export default function Envelopes() {
     src: `/images/money-envelopes/${i + 1}.jpg`,
   }));
 
+  let getImages = IMAGES.length;
+
   const ITEMS_PER_PAGE = 3;
 
   const [page, setPage] = useState(1);
@@ -46,7 +48,7 @@ export default function Envelopes() {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="pagination-div flex justify-center mt-6 gap-2">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             key={i}
@@ -59,6 +61,8 @@ export default function Envelopes() {
           </button>
         ))}
       </div>
+
+      <div className="get-images-count">{getImages + " Images"}</div>
 
       {/* Lightbox */}
       {openIndex !== null && (

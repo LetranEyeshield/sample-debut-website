@@ -24,28 +24,38 @@ export default function Navbar() {
     }
   }, [pathname]);
 
+  function handleToggle() {
+    const navMenu = document.getElementById("navMenu") as HTMLElement;
+    navMenu.classList.toggle("hidden");
+  }
+
   return (
-    <nav id="navbar" className="">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <div id="hamburger-menu" className="text-xl font-bold mr-2">
-          Menu
-        </div>
+    <>
+      <div className="responsive-menu">
         {/* Hamburger Button */}
-        <button
-          className="lg:hidden flex flex-col space-y-1"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="w-6 h-0.5 bg-black" />
-          <span className="w-6 h-0.5 bg-black" />
-          <span className="w-6 h-0.5 bg-black" />
+        <button id="menuToggle" onClick={handleToggle}>
+          Menu ☰
         </button>
+        <nav id="navMenu" className="hidden">
+          {/* Menu Items */}
+          <ul className="flex flex-col gap-4">
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={currentPath === item.href ? "active" : ""}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      <nav id="navbar" className="">
         {/* Menu Items */}
-        <ul
-          className={`lg:flex lg:items-center gap-6 transition-all duration-300 ease-in-out ${
-            menuOpen ? "block mt-4" : "hidden"
-          } lg:mt-0`}
-        >
+        <ul className="flex items-center gap-6 transition-all duration-300 ease-in-out">
           {menuItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -57,7 +67,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }

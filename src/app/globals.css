@@ -101,11 +101,6 @@ h2 {
   width: 100vw;
 }
 
-#hamburger-menu,
-#hamburger-menu button {
-  display: none;
-}
-
 #banner h1 {
   font-family: "COOPBL", sans-serif;
   font-size: 3.1rem;
@@ -381,4 +376,28 @@ h2 {
 hr {
   margin-top: 30px;
   color: #3b5998;
+}
+
+.get-images-count {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* responsive stuffs */
+.responsive-menu {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+#menuToggle {
+  width: 100%;
+  text-align: right;
+  margin: 0 0 0 -20px;
+  color: #fff;
+}
+#navMenu a {
+  color: #fff;
 }

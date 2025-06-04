@@ -51,7 +51,7 @@ export default function ContactForm() {
         className="contact-form max-w-xl p-4 space-y-4 text-white"
       >
         <h2 id="contact-h2">Contact Us</h2>
-        <div className="flex gap-4">
+        <div className="flex gap-4 name-fields">
           <input
             type="text"
             name="firstName"

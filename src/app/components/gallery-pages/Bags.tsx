@@ -15,6 +15,8 @@ export default function Bags() {
     description: `RM'S MUG PRINTING ${i + 1}`, // optional
   }));
 
+  let getImages = IMAGES.length;
+
   const ITEMS_PER_PAGE = 1;
 
   const [page, setPage] = useState(1);
@@ -48,7 +50,7 @@ export default function Bags() {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="pagination-div flex justify-center mt-6 gap-2">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             key={i}
@@ -61,6 +63,8 @@ export default function Bags() {
           </button>
         ))}
       </div>
+
+      <div className="get-images-count">{getImages + " Image"}</div>
 
       {/* Lightbox */}
       {openIndex !== null && (
