@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Geist,
-  Geist_Mono,
-  Bungee,
-  Dancing_Script,
-  Great_Vibes,
-} from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../css/responsive.css";
 import Header from "./components/Header";

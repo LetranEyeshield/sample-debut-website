@@ -13,7 +13,7 @@ export default function Envelopes() {
     src: `/images/money-envelopes/${i + 1}.jpg`,
   }));
 
-  let getImages = IMAGES.length;
+  const getImages = IMAGES.length;
 
   const ITEMS_PER_PAGE = 3;
 

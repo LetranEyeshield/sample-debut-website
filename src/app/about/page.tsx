@@ -12,7 +12,7 @@ export default function About() {
             one-stop shop for personalized items perfect for gifts, events, and
             business needs. We specialize in mug printing, Sintra boards, money
             envelopes, ref magnets, and loot bags—all designed with care and
-            printed with precision. Whether you're celebrating a milestone,
+            printed with precision. Whether you&apos;re celebrating a milestone,
             promoting your brand, or simply adding a personal touch, RM&apos;S
             Mug Printing is here to bring your ideas to life. With a strong
             focus on customer satisfaction, we turn your vision into beautifully

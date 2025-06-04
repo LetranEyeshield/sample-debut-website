@@ -15,7 +15,7 @@ export default function Bags() {
     description: `RM'S MUG PRINTING ${i + 1}`, // optional
   }));
 
-  let getImages = IMAGES.length;
+  const getImages = IMAGES.length;
 
   const ITEMS_PER_PAGE = 1;
 

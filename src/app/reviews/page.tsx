@@ -12,7 +12,7 @@ export default function Reviews() {
             <i className="fas fa-star"></i>
           </span>
           <p className="comments">
-            Thank You so much RM's Mug Printing.. Super ganda at super
+            Thank You so much RM&apos;s Mug Printing.. Super ganda at super
             affordable price pa.. Sa uulitin po😊❤
           </p>
           <p className="person">- Myrasol Fruto Orpiano -</p>

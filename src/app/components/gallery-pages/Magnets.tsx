@@ -13,7 +13,7 @@ export default function Magnets() {
     src: `/images/ref-magnets/${i + 1}.jpg`,
   }));
 
-  let getImages = IMAGES.length;
+  const getImages = IMAGES.length;
 
   const ITEMS_PER_PAGE = 2;
 

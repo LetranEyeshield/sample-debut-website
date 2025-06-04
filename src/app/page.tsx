@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import ContactForm from "./components/Contact";
 
@@ -97,7 +97,7 @@ export default function Home() {
             <i className="fas fa-star"></i>
           </span>
           <p className="comments">
-            Thank You so much RM's Mug Printing.. Super ganda at super
+            Thank You so much RM&apos;s Mug Printing.. Super ganda at super
             affordable price pa.. Sa uulitin po😊❤
           </p>
           <p className="person">- Myrasol Fruto Orpiano -</p>
@@ -125,7 +125,7 @@ export default function Home() {
             <i className="fas fa-star"></i>
           </span>
           <p className="comments">
-            Thank you RMs Mugs Printing s souvenir for my daughter's
+            Thank you RMs Mugs Printing s souvenir for my daughter&apos;s
             christening.
           </p>
           <p className="person">- Rosemarie Macarling Baniaga -</p>

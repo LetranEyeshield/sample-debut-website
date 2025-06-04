@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
 
   // You can move this array outside the component
   const menuItems = [
@@ -20,11 +19,7 @@ export default function Footer() {
     <footer className="footer">
       <nav className="">
         {/* Menu Items */}
-        <ul
-          className={`lg:flex lg:items-center gap-6 transition-all duration-300 ease-in-out ${
-            menuOpen ? "block mt-4" : "hidden"
-          } lg:mt-0`}
-        >
+        <ul className="flex lg:items-center gap-6">
           {menuItems.map((item) => (
             <li key={item.href}>
               <Link
@@ -37,7 +32,7 @@ export default function Footer() {
           ))}
         </ul>
       </nav>
-      <p className="company-name">RM'S MUG PRINTING</p>
+      <p className="company-name">RM&apos;S MUG PRINTING</p>
       <span className="reserved">All rights reserved 2025</span>
     </footer>
   );

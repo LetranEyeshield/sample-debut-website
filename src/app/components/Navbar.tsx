@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState("");
 
   // You can move this array outside the component
