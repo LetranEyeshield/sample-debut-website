@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "../css/responsive.css";
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import Footer from "./components/Footer";
+import "../../public/css/responsive.css";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,25 +16,20 @@ const geistMono = Geist_Mono({
 
 //USE FOR SEO
 export const metadata: Metadata = {
-  // title: "Rolan and Kate's Wedding",
-  // description: "Rolan and Kate's Wedding",
-  title: "RM'S MUG PRINTING",
-  description:
-    "Affordable Mugs, Sintra Board, Money Envelopes, Ref Magnets and Loot Bags for all occassions and sourvenirs",
-  keywords:
-    "mugs, magic mugs, affordable mugs sintra, sintra boards, affordable sintra boards, money envelopes, affordable money envelopes, ref magnets, affordable ref magnets, loot bags, affordable loot bags",
+  title: "Rencriselle's 18th Birthday",
+  description: "18th Birthday, Debut, Birthday, Party, Occassion",
+  keywords: "birthday, 18th birthday, party, occassion, event",
   openGraph: {
-    title: "RM'S MUG PRINTING",
-    description:
-      "Affordable Mugs, Sintra Board, Money Envelopes, Ref Magnets and Loot Bags for all occassions and souvenirs",
+    title: "RENCRISELLE'S 18TH BIRTHDAY",
+    description: "18th Birthday, Debut, Birthday, Party, Occassion",
     url: "https://yourdomain.com",
-    siteName: "RM'S MUG PRINTING",
+    siteName: "RENCRISELLE'S 18TH BIRTHDAY",
     images: [
       {
         url: "/banner.jpg", // Make sure this is a real image path
         width: 1200,
         height: 630,
-        alt: "Company Banner",
+        alt: "Debutant Banner",
       },
     ],
     type: "website",
@@ -55,16 +48,16 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Monsieur+La+Doulaise&family=Pinyon+Script&display=swap');
+        </style>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="wrapper">
-          <Header />
-          <Banner />
-          {children}
-          <Footer />
-        </div>
+        <div className="wrapper">{children}</div>
+        <Toaster position="top-center" />
       </body>
     </html>
   );
