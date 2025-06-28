@@ -48,10 +48,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Monsieur+La+Doulaise&family=Pinyon+Script&display=swap');
-        </style>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Monsieur+La+Doulaise&family=Pinyon+Script&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
