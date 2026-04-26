@@ -20,10 +20,10 @@ export const metadata: Metadata = {
   description: "18th Birthday, Debut, Birthday, Party, Occassion",
   keywords: "birthday, 18th birthday, party, occassion, event",
   openGraph: {
-    title: "RENCRISELLE'S 18TH BIRTHDAY",
+    title: "REN CRISELLE'S 18TH BIRTHDAY",
     description: "18th Birthday, Debut, Birthday, Party, Occassion",
-    url: "https://yourdomain.com",
-    siteName: "RENCRISELLE'S 18TH BIRTHDAY",
+    url: "https://sample-debut-website.vercel.app/",
+    siteName: "REN CRISELLE'S 18TH BIRTHDAY",
     images: [
       {
         url: "/banner.jpg", // Make sure this is a real image path

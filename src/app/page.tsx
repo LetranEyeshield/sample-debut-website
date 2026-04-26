@@ -245,7 +245,7 @@ export default function Home() {
       <Section animation={headerAnimation}>
         <header id="header" className="flex items-center flex-col w-full">
           <h1 className="great-vibes text-5xl md:text-9xl text-center text-white w-full">
-            Rencriselle&apos;s{" "}
+            Ren Criselle&apos;s{" "}
             <span className="dancing-script text-5xl md:text-7xl">18th</span>{" "}
             <span className="pinyon-script text-5xl md:text-8xl">Birthday</span>
           </h1>
@@ -270,7 +270,7 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-black-500 md:text-xl px-3">
-            Hi! I&apos;m Rencriselle and I&apos;m so exited to celebrate my 18th
+            Hi! I&apos;m Ren Criselle and I&apos;m so exited to celebrate my 18th
             birthday with you! Join me for an unforgettable evening full of fun,
             laughter, and memories.
           </p>
@@ -283,7 +283,7 @@ export default function Home() {
           </h2>
           <img src="/images/parents.jpg" alt="Rencriselle" loading="lazy" />
           <p className="mt-8 text-2xl">Mr. Michael Cris Rosalin</p>
-          <p className="text-2xl">Mrs. Renelle Rosalin</p>
+          <p className="text-2xl">Mrs. Renica Ellen Rosalin</p>
         </div>
       </Section>
 

@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <header id="header" className="flex items-center py-10 w-full mt-14">
         <h1 className="great-vibes text-5xl md:text-9xl text-center w-full">
-          Rencriselle&apos;s{" "}
+          Ren Criselle&apos;s{" "}
           <span className="dancing-script text-5xl md:text-7xl">18th</span>{" "}
           <span className="pinyon-script text-5xl md:text-8xl">Birthday</span>
         </h1>
