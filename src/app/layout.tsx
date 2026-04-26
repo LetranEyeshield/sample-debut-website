@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 //USE FOR SEO
 export const metadata: Metadata = {
-  title: "Rencriselle's 18th Birthday",
+  title: "Ren Criselle's 18th Birthday",
   description: "18th Birthday, Debut, Birthday, Party, Occassion",
   keywords: "birthday, 18th birthday, party, occassion, event",
   openGraph: {
